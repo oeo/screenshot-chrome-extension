@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full Page Screenshot</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="result.css">
+</head>
+<body data-state="loading">
+  <header>
+    <div class="info">
+      <h1 id="title">Full Page Screenshot</h1>
+      <p id="subtitle"></p>
+    </div>
+    <div class="actions" id="actions" hidden>
+      <button id="download-png" class="primary">Download PNG</button>
+      <button id="download-jpg">Download JPEG</button>
+      <button id="copy">Copy</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="status" class="status">
+      <div class="spinner" id="spinner"></div>
+      <p id="status-text">Building your screenshot…</p>
+    </div>
+    <p id="notice" class="notice" hidden></p>
+    <div id="images"></div>
+  </main>
+
+  <script src="db.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>
